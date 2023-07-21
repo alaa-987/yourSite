@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+   --back-color: #fec260;
+   --text-color:#352e28;
+}
+body{
+   background-color: #F7ECDE;
+   color: var(--text-color);
+}
+.title{
+   font-family: 'Pacifico', cursive;
+   font-size: 50px;
+}
+
+.title-container{
+   width: 290px;
+   transition: 0.5s;
+
+}
+
+.layer{
+   width: 90%;
+   height: 55%;
+   bottom: -37%;   
+   transition: 0.5s;
+   background-color: var(--back-color) !important;
+}
+
+.title-container:hover .layer{
+   transform: translateY(-30%);
+
+}
+ 
+ /* .text h1::after{
+    content: "";
+    position: absolute;
+    top: 52%;
+    right: 424px;
+    width: 24%;
+    height: 22px;
+    background-color: var(--back-color);
+    z-index: -1;
+ } */
+ /* @keyframes increase {
+   0%{
+      height: 22px;
+   }
+   100%{
+      height: 35px;
+   }
+ } */
+ .text h1 :hover ::after{
+   animation: increase 1s ease-in;
+ }
+ .form-body{
+   border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: var(--text-color);
+   
+ }
+ .form-body h2{
+   font-family: "Righteous", cursive;
+   font-size: 25px;
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ .form-control:focus{
+   border-color: var(--back-color);
+   box-shadow: 2px 2px 10px var(--back-color);
+ }
+ .button1{
+   margin-left: 450px;
+   width: 155px;
+   height: 40px;
+ }
+.btn-primary{
+   --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+.btn-secondary{
+   --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+.btn-danger{
+   --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+.swal-button {
+   background-color: #d1512d;
+}
+
+.swal-button:hover{
+   background-color: #bb4120 !important;
+}
